@@ -15,6 +15,15 @@
 - q (stop macro record)
 - @a (run macro record)
 - j (move the cursor to the next line)
+- Ctrl + v
+- Shift + v
+- =
+- Shift >
+- Shift <
+- dd
+- dw
+- yy
+- d
 
 
 ## LSP Config
