@@ -9,6 +9,7 @@
 
 
 ## Shorcuts:
+- https://vim.rtorr.com/
 - $ (end line)
 - 0 (start line)
 - qa (macro record)
