@@ -15,3 +15,7 @@
 - q (stop macro record)
 - @a (run macro record)
 - j (move the cursor to the next line)
+
+
+## LSP Config
+- :h vim.lsp.buf -> help to see vim available function
