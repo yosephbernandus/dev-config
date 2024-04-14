@@ -8,7 +8,7 @@
 - export PATH="/usr/local/bin:$PATH" (Set nvim as global)
 
 
-## Shorcuts:
+## Shortcuts:
 - https://vim.rtorr.com/
 - $ (end line)
 - 0 (start line)
@@ -29,3 +29,8 @@
 
 ## LSP Config
 - :h vim.lsp.buf -> help to see vim available function
+
+## Nerd Fonts install
+- check fonts located using whereis fonts
+- move fonts downloaded from https://www.nerdfonts.com/font-downloads and unzip
+- sudo fc-cache -fv (reload the fonts)
