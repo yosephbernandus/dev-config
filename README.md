@@ -34,3 +34,20 @@
 - check fonts located using whereis fonts
 - move fonts downloaded from https://www.nerdfonts.com/font-downloads and unzip
 - sudo fc-cache -fv (reload the fonts)
+
+
+## Tmux Command
+- Ctrl+b running command tmux
+- Ctrl+b % New Window
+- Ctrl+b " horizontal
+- Arrow Key to move tmux session
+- Ctrl+b } moving layout
+- Ctrl+b space moving layout to middle
+- Ctrl+b c new window 
+- Ctrl+b : colon in bottom
+- rename-window server 
+- tmux ls (list session)
+- tmux attach (show session)
+- Ctrl+b s (Checkout tmux session)
+- rename-session server 
+- Ctrl+b w (show all session)
