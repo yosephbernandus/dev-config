@@ -35,7 +35,6 @@
 - move fonts downloaded from https://www.nerdfonts.com/font-downloads and unzip
 - sudo fc-cache -fv (reload the fonts)
 
-
 ## Tmux Command
 - Ctrl+b running command tmux
 - Ctrl+b % New Window
@@ -51,3 +50,7 @@
 - Ctrl+b s (Checkout tmux session)
 - rename-session server 
 - Ctrl+b w (show all session)
+- (Leader change to) C-s
+- Ctrl-s + r (To Reload)
+- tmux source ~/.tmux.conf (if the tmux not success restart)
+- https://github.com/tmux-plugins/tpm (Package Manager)
