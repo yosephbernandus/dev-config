@@ -54,3 +54,9 @@
 - Ctrl-s + r (To Reload)
 - tmux source ~/.tmux.conf (if the tmux not success restart)
 - https://github.com/tmux-plugins/tpm (Package Manager)
+
+
+## Lazygit
+- https://github.com/jesseduffield/lazygit?tab=readme-ov-file#ubuntu
+- lazygit
+- ? (open the keybindings) -> / (to search key bindings)
