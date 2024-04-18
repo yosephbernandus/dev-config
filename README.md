@@ -51,12 +51,14 @@
 - rename-session server 
 - Ctrl+b w (show all session)
 - (Leader change to) C-s
-- Ctrl-s + r (To Reload)
+- Ctrl-s + r (To Reload) default is ctrl+b I chanage it
 - tmux source ~/.tmux.conf (if the tmux not success restart)
 - https://github.com/tmux-plugins/tpm (Package Manager)
+- ctrl-s + I to makesure the plugin is installed
+- and always using new tmux for getting the new feature update (Suggestion from tar source tarball https://github.com/tmux/tmux/wiki/Installing#from-source-tarball)
 
 
 ## Lazygit
-- https://github.com/jesseduffield/lazygit?tab=readme-ov-file#ubuntu
+- https://github.com/jesseduffield/lazygit?tab=reiadme-ov-file#ubuntu
 - lazygit
 - ? (open the keybindings) -> / (to search key bindings)
