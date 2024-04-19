@@ -25,6 +25,7 @@
 - dw
 - yy
 - d
+- ctrl + w + s (Split)
 
 
 ## LSP Config
