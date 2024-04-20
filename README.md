@@ -26,7 +26,10 @@
 - yy
 - d
 - ctrl + w + s (Split)
-
+- dw (delete word)
+- ctrl+w / ctrl+e (next character word)
+- g_ (go to end character)
+- leader t (runnning vim test) 
 
 ## LSP Config
 - :h vim.lsp.buf -> help to see vim available function
