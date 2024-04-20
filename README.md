@@ -30,6 +30,7 @@
 - ctrl+w / ctrl+e (next character word)
 - g_ (go to end character)
 - leader t (runnning vim test) 
+- ctrk s + z (Tmux zoom up)
 
 ## LSP Config
 - :h vim.lsp.buf -> help to see vim available function
