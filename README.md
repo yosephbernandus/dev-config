@@ -31,6 +31,7 @@
 - g_ (go to end character)
 - leader t (runnning vim test) 
 - ctrk s + z (Tmux zoom up)
+- ^ or _ first character non whitespace
 
 ## LSP Config
 - :h vim.lsp.buf -> help to see vim available function
