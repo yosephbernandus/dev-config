@@ -26,6 +26,10 @@ return {
 		"neovim/nvim-lspconfig",
 		lazy = false,
 		config = function()
+			local on_attach = function(client)
+				require("completion").on_attach(client)
+			end
+
 			-- local on_attach = require("plugins.configs.lspconfig").on_attach
 			-- local util = require("lspconfig/util")
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -34,20 +38,38 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
+
 			lspconfig.tsserver.setup({
 				capabilities = capabilities,
 			})
+
 			lspconfig.ruff_lsp.setup({
 				capabilities = capabilities,
 			})
 
+			lspconfig.pyright.setup({
+				capabilities = capabilities,
+				settings = {
+					analysis = {
+						autoSearchPaths = true,
+						diagnosticMode = "openFilesOnly",
+						useLibraryCodeForTypes = true,
+					},
+				},
+			})
 			lspconfig.rust_analyzer.setup({
-				--       on_attach = on_attach,
+				on_attach = on_attach,
+				-- on_attach = function(client, bufnr)
+				--  vim.lsp.inlay_hint.enable(bufnr)
+				-- end,
 				capabilities = capabilities,
 				filetypes = { "rust" },
 				--       root_dir = util.root_pattern("Cargo.toml"),
 				settings = {
 					["rust-analyzer"] = {
+						diagnostics = {
+							enable = false,
+						},
 						cargo = {
 							allFeatures = true,
 						},
