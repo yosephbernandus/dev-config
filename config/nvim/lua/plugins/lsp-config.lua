@@ -9,18 +9,21 @@ return {
 	{
 		"williamboman/mason-lspconfig.nvim",
 		lazy = false,
-		opts = {
-			auto_install = true,
-		},
-		-- config = function()
-		-- require("mason-lspconfig").setup({
-		-- ensure_installed = {
-		-- "lua_ls",
-		-- "tsserver",
-		-- "ruff_lsp"
-		-- }
-		-- })
-		-- end
+		--opts = {
+		--	auto_install = true,
+		--},
+		config = function()
+			require("mason-lspconfig").setup({
+				ensure_installed = {
+					"lua_ls",
+					"tsserver",
+					"ruff_lsp",
+					"rust_analyzer",
+					"pyright",
+					"html",
+				},
+			})
+		end,
 	},
 	{
 		"neovim/nvim-lspconfig",
@@ -43,6 +46,8 @@ return {
 				capabilities = capabilities,
 			})
 
+			lspconfig.html.setup({ capabilities = capabilities })
+
 			lspconfig.ruff_lsp.setup({
 				capabilities = capabilities,
 			})
@@ -58,23 +63,20 @@ return {
 				},
 			})
 			lspconfig.rust_analyzer.setup({
-				on_attach = on_attach,
+				-- on_attach = on_attach,
 				-- on_attach = function(client, bufnr)
 				--  vim.lsp.inlay_hint.enable(bufnr)
 				-- end,
 				capabilities = capabilities,
-				filetypes = { "rust" },
+				-- filetypes = { "rust" },
 				--       root_dir = util.root_pattern("Cargo.toml"),
-				settings = {
-					["rust-analyzer"] = {
-						diagnostics = {
-							enable = false,
-						},
-						cargo = {
-							allFeatures = true,
-						},
-					},
-				},
+				-- settings = {
+				--["rust-analyzer"] = {
+				--	cargo = {
+				--		allFeatures = true,
+				--	},
+				--	},
+				-- },
 			})
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
