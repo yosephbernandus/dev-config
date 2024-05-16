@@ -68,6 +68,9 @@ return {
 				--  vim.lsp.inlay_hint.enable(bufnr)
 				-- end,
 				capabilities = capabilities,
+        cmd = {
+          "rustup", "run", "stable", "rust-analyzer",
+        }
 				-- filetypes = { "rust" },
 				--       root_dir = util.root_pattern("Cargo.toml"),
 				-- settings = {
