@@ -68,3 +68,8 @@
 - https://github.com/jesseduffield/lazygit?tab=reiadme-ov-file#ubuntu
 - lazygit
 - ? (open the keybindings) -> / (to search key bindings)
+
+
+## Livegrep telescope not working
+- Check using :check telescope
+- livegrep need install ripgrep https://github.com/BurntSushi/ripgrep
